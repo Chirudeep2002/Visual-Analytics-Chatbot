@@ -1,0 +1,66 @@
+# 🤖 Visual Analytics Chatbot
+
+An advanced, visually appealing chatbot that:
+- Greets the user
+- Lets the user select a role (Student, Researcher, Analyst)
+- Accepts input via text, voice, and file upload
+- Connects to GPT-3.5-turbo (via OpenRouter API)
+- Reads out the bot's responses (speech output)
+- Shows a live analytics dashboard (messages sent, files uploaded)
+- Supports Dark Mode toggle 🌑
+- Uploads and saves files locally
+- Beautiful, animated UI ✨
+
+---
+
+## 📋 Features
+
+- 🎙️ Text, Voice, and File Input
+- 🎨 Polished UI with Dark/Light Mode
+- 🗣️ Bot Voice Output (Text-to-Speech)
+- 📈 Live Analytics Dashboard (Messages, Uploads + Bar Chart)
+- 📝 Upload File Support (Saved in `uploads/` folder)
+- 🔥 Built with Flask (Python backend) + HTML/CSS/JavaScript frontend
+- 🚀 Powered by OpenRouter API (GPT-3.5-turbo)
+
+---
+
+## 🏗️ Project Structure
+
+```plaintext
+chatbot-project/
+│
+├── server.py         # Flask backend server
+├── index.html        # Main chatbot frontend
+├── style.css         # Chatbot styling
+├── script.js         # Frontend functionality (text, voice, uploads, dashboard)
+├── uploads/          # Folder where uploaded files are saved
+├── README.md         # Project documentation (this file)
+└── requirements.txt  # Required Python libraries
+
+ Technologies Used
+Flask (Python web server)
+
+Flask-CORS (to allow cross-origin requests)
+
+OpenAI Python SDK (for OpenRouter API communication)
+
+OpenRouter (open LLM gateway platform)
+
+Chart.js (for analytics dashboard)
+
+HTML/CSS/JavaScript (Frontend)
+
+---
+pip install flask flask-cors openai
+pip install -r requirements.txt
+
+---
+
+Start the Flask Server
+
+python server.py
+
+---
+
+

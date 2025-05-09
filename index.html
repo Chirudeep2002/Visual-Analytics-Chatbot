@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Visual Analytics Chatbot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chatbot-container">
+    <div class="header">
+      <span>🤖 Visual Chatbot</span>
+      <label class="switch">
+        <input type="checkbox" id="dark-mode-toggle">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div id="chat-box" class="chat-box"></div>
+
+    <div class="input-section">
+      <select id="role-select">
+        <option value="">Select Role</option>
+        <option value="student">Student</option>
+        <option value="researcher">Researcher</option>
+        <option value="analyst">Analyst</option>
+      </select>
+
+      <input type="text" id="user-input" placeholder="Type your message...">
+      <button id="send-btn">➤</button>
+      <button id="voice-btn">🎙️</button>
+      <label for="file-upload" class="upload-label">📂</label>
+      <input type="file" id="file-upload" class="file-input" />
+    </div>
+
+    <div id="typing-indicator" class="typing-indicator" style="display: none;">Bot is typing<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span></div>
+
+    <div class="analytics">
+      <h3>📊 Analytics Dashboard</h3>
+      <div id="analytics-counters">
+        <div><strong id="messages-count">0</strong><br>Messages</div>
+        <div><strong id="uploads-count">0</strong><br>Files Uploaded</div>
+      </div>
+      <canvas id="analytics-chart" width="300" height="150"></canvas>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
