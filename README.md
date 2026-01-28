@@ -33,9 +33,6 @@ Supports role-based conversations, voice input, file uploads, dark mode, and act
 - OpenAI / OpenRouter API
 
 ---
-## 📸 Preview
-
-![Visual Analytics Chatbot](Screenshot%20(36).png)
 
 ## 🚀 How to Run Locally
 
